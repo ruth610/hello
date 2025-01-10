@@ -1,0 +1,14 @@
+#user-data-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+#user-data-form input,button,label{
+    width: 30%;
+    margin: 0 auto;
+}
+#user-data-form input{
+    margin: 10px auto;
+}

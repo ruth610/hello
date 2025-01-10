@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../home/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand" id="home">
+    <div class="container navbar-nav d-flex justify-content-between" id="navbar">
+      <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-icons ml-auto">
+        <ul class="navbar-nav icons">
+          <li class="nav-items"><a class="nav-link" href="../home/index.html">Home</a></li>
+          <li class="nav-items"><a class="nav-link" href="../contact/contact.html">Contacts</a></li>
+          <li class="nav-items" id="loginNav"><a href="" class="nav-link d-flex justify-content-between align-items-center"><img src="../assets/icons/lock.png" alt="" width="15">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Your Order</h1>
+
+    <div id="order-container" class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="order-table-body">
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-end">
+      <h3>Total: $<span id="total-price">0.00</span></h3>
+      <button id="order-button" class="btn btn-primary mt-3">Place Order</button>
+    </div>
+
+    <div id="order-confirmation" class="alert alert-success mt-4 d-none" role="alert">
+      Order placed successfully!
+    </div>
+  </main>
+  <div id="user-data-form"></div>
+
+  <script src="../dist/order/order.js" type="module"></script>
+</body>
+</html>
